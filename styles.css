@@ -1,1 +1,69 @@
-/*  your css code here. If applicable */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
+  background-color: #f0f0f0; /* Light grey background */
+  display: flex;               /* Use flexbox for centering */
+  flex-direction: column;      /* Arrange content in a column */
+  align-items: center;         /* Horizontally center content */
+  justify-content: center;     /* Vertically center content */
+  height: 100vh;               /* Full height of the viewport */
+}
+
+/* Circle container styles */
+#circle-container {
+  display: flex;               /* Align the circles in a row */
+  justify-content: center;     /* Center the circles horizontally */
+  align-items: center;         /* Align the circles vertically */
+  gap: 15px;                   /* Add space between circles */
+  margin-bottom: 20px;         /* Add space between circles and buttons */
+}
+
+/* Circle styles */
+.circle {
+  width: 80px;                 /* Set a fixed width for each circle */
+  height: 80px;                /* Set a fixed height for each circle */
+  background-color: #3498db;   /* Blue background color */
+  border-radius: 50%;          /* Make the divs round (circle) */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow around circles */
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;          /* Add padding to buttons */
+  font-size: 16px;             /* Larger font size for readability */
+  background-color: #2980b9;   /* Button background color */
+  color: white;                /* Button text color */
+  border: none;                /* Remove border */
+  border-radius: 5px;          /* Round corners for buttons */
+  cursor: pointer;             /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background change on hover */
+  margin: 10px;                /* Add space around the buttons */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #1d6a8d;   /* Darker blue on hover */
+}
+
+/* Optional: Button layout with specific spacing */
+button#prev {
+  margin-right: 10px;           /* Add space between the "Previous" and "Next" buttons */
+}
+
+button#next {
+  margin-left: 10px;            /* Add space between the "Previous" and "Next" buttons */
+}
+
+/* When a circle is hovered */
+.circle:hover {
+  transform: scale(1.1);        /* Slightly increase the size of the circle on hover */
+  cursor: pointer;              /* Change cursor to pointer when hovering over circles */
+}
